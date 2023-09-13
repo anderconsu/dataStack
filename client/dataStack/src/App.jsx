@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1 className="formulario">Predicción de precios moviliarios</h1>
+      <h1 className="formulario">Predicción de precios mobiliarios</h1>
       <Form />
     </>
   )
