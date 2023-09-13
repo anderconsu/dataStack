@@ -1,6 +1,15 @@
 version: '3'
 
 services:
+  vite:
+    build: ./client/dataStack
+    container_name: dataStackVite
+    ports:
+      - 5173:5173
+    volumes:
+      - ./client/dataStack:/app
+      - /app/node_modules
+
   notebook:
     image: jupyter/datascience-notebook
     container_name: taller_notebook
